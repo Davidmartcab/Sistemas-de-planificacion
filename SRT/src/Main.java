@@ -1,16 +1,17 @@
-import java.io.*;
 import java.util.*;
+import java.io.*;
 
 public class Main {
     static Scanner sc = new Scanner(System.in);
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
     static ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
-    static ArrayList<String> resultado = new ArrayList<String>();
     static ArrayList<Integer> rondas = new ArrayList<Integer>();
     static ArrayList<Integer> turnos = new ArrayList<Integer>();
     static ArrayList<Boolean> finish = new ArrayList<Boolean>();
-
+    static ArrayList<String> resultado = new ArrayList<String>();
     static int count = 0;
+    
     public static void main(String[] args) throws IOException{
         //No se contempla la posibilidad de que uno llegue una vez se haya empezado a
         //ejecutar otro, por lo que el ordenado se hace desde el principio.
