@@ -1,0 +1,5 @@
+No se tiene en cuanta que otro proceso pueda entrar después del inicio, todos llegan a la vez.
+
+RR sin prioridades: RR/src/mainnoP, hay que poner Tiempo-Prioridad, si pones la misma prioridad en todos es como si no estuviera.
+
+SJF = SRT (En este supuesto caso)

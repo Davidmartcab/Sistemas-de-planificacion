@@ -26,7 +26,7 @@ public class Main {
         int maxNum = 10;
 
         //1 = Aleatorio, 2 = Manual
-        int elec = 1;
+        int elec = 2;
 
         if(elec != 2 && nProcesos < 1){
 

@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class MainnoP {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -116,17 +116,17 @@ public class Main {
         }
     }
 
-
     static void order(int nProcesos){
 
         for (int i = 0; i < nProcesos; i++) {
             int c = 0;
             for (int j = 0; j < nProcesos; j++) {
-                int priori1 = list.get(i).get(1), priori2 = list.get(j).get(1);
                 int timepo1 = list.get(i).get(0), tiempo2 = list.get(j).get(0);
-                if (priori1 > priori2) {
+                // int priori1 = list.get(i).get(1), priori2 = list.get(j).get(1);
+                int llegada1 = list.get(i).get(2), llegada2 = list.get(j).get(2);
+                if (llegada1 > llegada2) {
                     c += 1;
-                }else if (priori1 == priori2){
+                }else if (llegada1 == llegada2){
                     if(timepo1 > tiempo2){
                         c += 1;
                     }else{
